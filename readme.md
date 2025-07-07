@@ -4,11 +4,13 @@
 
 ---
 
+[📄 Download PDF Version](tyler.pdf)
+
+---
+
 ## Professional Summary
 
 Safety-critical software engineer with 3+ years developing avionics systems for commercial aircraft. Specialized in performance optimization, systems programming, and DO-178C compliant development. Proven track record of building scalable applications serving thousands of users and modernizing legacy systems.
-
----
 
 ## Work Experience
 

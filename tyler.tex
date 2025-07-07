@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author : Brandan Tyler Lasley
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+       \textit{\small#3} \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Brandan Tyler Lasley} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:5039293771}{(503) 929-3771}
+    $|$
+    \faAt \hspace{.5pt} \href{mailto:brandan@brandanlasley.com}{brandan@brandanlasley.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/brandantl}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/TylerTheFox}{GitHub}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Honeywell+Aerospace/@33.6870362,-112.1555085,12z/data=!4m10!1m2!2m1!1shoneywell+aerospace!3m6!1s0x872b6f9fb0f55dd1:0x7c235f5e51b586fc!8m2!3d33.6798553!4d-112.0982237!15sChNob25leXdlbGwgYWVyb3NwYWNlIgOIAQGSAQxtYW51ZmFjdHVyZXLgAQA!16s\%2Fg\%2F1v4ptgkj?entry=ttu}{Phoenix, Arizona}
+\end{center}
+
+%---------- PROFESSIONAL SUMMARY ----------
+\section{Professional Summary}
+\vspace{2pt}
+\small{Safety-critical software engineer with 3+ years developing avionics systems for commercial aircraft. Specialized in performance optimization, systems programming, and DO-178C compliant development. Proven track record of building scalable applications serving thousands of users and modernizing legacy systems.}
+\vspace{8pt}
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Honeywell Aerospace}{Phoenix, Arizona}
+      {Software Engineer - Flight Systems}{Jan 2023 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Design, develop, and maintain avionics user interface pages for the Flight Management System (FMS) on the Multi-Function Control and Display Unit (MCDU) and Multi-Function Display (MFD) for \textbf{Airbus} commercial aircraft using \textbf{ADA}, \textbf{C++}, and \textbf{C} in a safety-critical, \textbf{DO-178C}-compliant environment}
+            \resumeItem{Perform verification, integration, and validation (IV\&V) of flight deck interfaces to ensure compliance with Airbus requirements and human factors standards, contributing to \textbf{zero safety incidents} in deployed systems}
+            \resumeItem{Collaborate with cross-functional teams (systems, safety, and test engineers) to refine requirements, conduct design reviews, and support certification activities for \textbf{multiple aircraft programs}}
+            \resumeItem{Develop and maintain custom aerospace tools including IDE plugins, compilers, and static analysis tools using \textbf{React} and \textbf{C\#}}
+            \resumeItem{Lead development and maintenance of internal web-based tooling for \textbf{50+ engineers}, enhancing team productivity and traceability across software versions}
+            \resumeItem{Oversee and manage \textbf{physical FMS test benches} and lab environments used for regression, integration, and system-level testing}
+            \resumeItem{Support debugging, defect analysis, and root-cause investigation for in-service issues}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Marion Area Multi Agency Emergency Telecommunication Center [METCOM]}{Woodburn, Oregon}
+      {Freelance Software Engineer}{June 2015 \textbf{--} June 2016}
+        \resumeItemListStart
+            \resumeItem{Developed interactive web applications using \textbf{Leaflet JS}, \textbf{AngularJS}, \textbf{PHP} and \textbf{MySQL} used to help with the organization and communication of emergency responders in big emergencies such as wild fires}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%----------- KEY ACHIEVEMENTS -----------
+
+\section{Key Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Safety-Critical Systems:}{ Contributed to DO-178C Level A software development for commercial aviation with zero defects} \\ \vspace{2pt}
+        \textbf{Performance Optimization:}{ Increased game engine object limits from 2,000 to 65,535 through memory management improvements} \\ \vspace{2pt}
+        \textbf{Community Impact:}{ Built Oregon 9-1-1 platform serving thousands of users during emergencies, gaining 10K+ Twitter followers} \\ \vspace{2pt}
+        \textbf{Systems Programming:}{ Specialized in assembly-level optimization and reverse engineering for performance improvements} \\ \vspace{2pt}
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+    
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+        {\textbf{Populous: The Beginning Game Engine Modernization} $|$ \emph{\href{http://www.populous3.info/}{\color{blue}Monthly Builds}} $|$ \emph{\href{https://www.popre.net/staff.php}{\color{blue}Website}}  }{}
+          \resumeItemListStart
+            \resumeItem{Led modernization of 1998 Electronic Arts game engine, porting to modern systems and extending multiplayer capacity from \textbf{4 to 8 players}}
+            \resumeItem{Rewrote scripting engine using \textbf{SOL3 LUA}, enabling community modifications and reducing development time}
+            \resumeItem{Engineered performance improvements: rewrote input subsystem (\textbf{RawInput}), audio (\textbf{SFML}), and memory management, increasing object limits by \textbf{3,100\%} (2K to 65K objects)}
+            \resumeItem{Technologies: \textbf{C++14}, \textbf{DirectX6-9}, \textbf{x86 Assembly}, \textbf{Jenkins CI/CD}, reverse engineering}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Oregon 9-1-1} $|$ \emph{\href{https://github.com/TylerTheFox/Oregon-911}{\color{blue}GitHub (Front End) }} $|$ \emph{\href{https://github.com/TylerTheFox/Oregon-911-Backbone}{\color{blue}GitHub (Back End) }} $|$ \emph{\href{https://twitter.com/WashCo_FireMed}{\color{blue}Washington County Feed }} $|$ \emph{\href{https://twitter.com/ClackCo_FireMed}{\color{blue}Clackamas County Feed }}}{}
+          \resumeItemListStart
+            \resumeItem{Developed and maintained interactive map service that visualized real-time emergency calls in the Portland metro area from 2009 to 2017, serving thousands of users during peak times}
+            \resumeItem{Built front-end using \textbf{PHP}, \textbf{JavaScript}, and \textbf{MySQL}, with backend services written in \textbf{Perl}, \textbf{C++}, and \textbf{Visual Basic.NET}}
+            \resumeItem{Created Twitter feeds that amassed a total of 10k followers across multiple accounts for different emergency services}
+            \resumeItem{Developed interactive website/map displaying all calls, unit statuses (en-route, on-scene, etc), previous call history, and user subscribable alerts}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{CSE412 Traffic Accident Visualization} $|$ \emph{\href{https://tylerthefox.com/projects/asu/cse412/}{\color{blue} Demo}} $|$ \emph{\href{https://github.com/TylerTheFox/CSE412-Traffic-Accident-Project}{\color{blue}GitHub}} }{}
+          \resumeItemListStart
+            \resumeItem{Built interactive map using \textbf{Leaflet JS}, \textbf{PHP}, \textbf{AngularJS}, and \textbf{PostgreSQL}}
+            \resumeItem{Visualized traffic accidents within the Washington and Clackamas counties in Oregon}
+            \resumeItem{Implemented ability to filter incidents by date and area in real time using interactive tools}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {Arizona State University
+      }{Tempe, Arizona }
+      {Ira A. Fulton Schools of Engineering}
+      {Bachelors of Science in Computer Science}{Jan 2018 \textbf{--} May 2022}
+    
+  \resumeSubHeadingListEnd
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{1pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Safety-Critical Development:}{ DO-178C, ADA, Airbus Requirements, IV\&V, Hardware-in-the-Loop Testing} \\ \vspace{2pt}
+        \textbf{Systems Programming:}{ C, C++, Intel Assembly (x86-64), Performance Optimization, Memory Management} \\ \vspace{2pt}
+        \textbf{Modern Development:}{ C\#, React, Python, Java, Git, Visual Studio, Linux} \\ \vspace{2pt}
+        \textbf{Web Technologies:}{ PHP, JavaScript, MySQL, PostgreSQL, AngularJS, LeafletJS, React} \\ \vspace{2pt}
+        \textbf{Specialized Tools:}{ Valgrind, Intel Parallel Studio, Jenkins, DirectX, OpenSSL, Boost, Poco} \\ \vspace{2pt}
+    }}
+  \resumeSubHeadingListEnd
+
+\end{document}
